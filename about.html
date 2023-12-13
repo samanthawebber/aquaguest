@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aqua Guest | Humane, Live Fish Decor for Weddings, Parties and More</title>
+    <link rel="icon" type="image/x-icon" href="../app/assets/images/betta_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Georgia'],
+            },
+            colors: {
+              'eggwhite': '#f6f5f4',
+              'cream': '#f6f1ea',
+              'purple': '#6a19a8',
+            },
+          },
+        }
+      }
+    </script>
+  </head>
+  <body class='bg-eggwhite'>
+
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo/Home link -->
+        <a href="./index.html">
+          <img src="./assets/betta_logo_root_white.png" alt="Aqua Guest Logo" style="width: 7rem; height: intrinsic;">
+        </a>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navbar links for mobile -->
+        <div id="mobile-menu" class="hidden lg:flex">
+          <div class="space-x-4 font-serif">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./prices.html">Prices</a>
+            <a href="./booking.html">Booking</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./contact.html" class="bg-white text-gray-800 py-2 px-4 rounded-full hover:bg-gray-100 focus:outline-none focus:shadow-outline">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class='container mx-auto mt-6 md:mt-5 px-5'>
+      <div class="container mx-auto mt-8">
+        <h1 class="text-4xl font-bold font-serif mb-4">About Aqua Guest</h1>
+
+        <div class="text-gray-700 leading-loose font-serif">
+          <p>Aqua Guest offers a unique and humane alternative to traditional event centerpieces.</p>
+          <br>
+          <p>We specialize in renting betta fish as centerpieces for weddings, conventions, and parties. We understand the importance of creating a memorable and visually stunning atmosphere for your guests. Our centerpiece solution not only adds a touch of elegance but also promotes the well-being of our aquatic friends.</p>
+          <br>
+          <p>Our bettas come in spacious bowls adorned with lush plants and soft lighting, creating a serene and captivating display for your tables. We prioritize the comfort, happiness, and safety of our fish, ensuring they receive the care they deserve throughout your event. After the celebration, the bettas return to our facility, where they continue to thrive under our dedicated care.</p>
+          <br>
+          <p>What sets Aqua Guest apart is our commitment to providing a humane and beautiful alternative to traditional table decorations. With Aqua Guest, you can enjoy a stunning centerpiece that not only enhances the ambiance but also promotes the ethical treatment of animals.</p>
+          <br>
+          <p>Thank you for considering Aqua Guest for your special event. We look forward to adding a touch of aquatic magic to your celebration while making a positive impact on the well-being of our finned friends.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <br><br>
+
+  <footer class="bg-gray-800 text-white px-4 py-4 font-serif">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Contact Info on the left -->
+      <div class="text-left text-sm">
+        <p>123 Main St, Cityville, State</p>
+        <p>contact@example.com</p>
+        <p>+1 (123) 456-7890</p>
+      </div>
+
+      <!-- Centered Copyright Text -->
+      <div class="text-center text-sm">
+        <p>© 2023, Aqua Guest</p>
+      </div>
+
+      <!-- Links to About and Social Media on the right -->
+      <div class="text-right text-sm grid grid-cols-1">
+        <a href="./about.html" class="text-gray-300 hover:text-white">About</a>
+        <a href="./index.html" class="text-gray-300 hover:text-white">Social Media</a>
+      </div>
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuToggle.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });
+</script>

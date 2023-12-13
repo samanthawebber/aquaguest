@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aqua Guest | Humane, Live Fish Decor for Weddings, Parties and More</title>
+    <link rel="icon" type="image/x-icon" href="../app/assets/images/betta_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Georgia'],
+            },
+            colors: {
+              'eggwhite': '#f6f5f4',
+              'cream': '#f6f1ea',
+              'purple': '#6a19a8',
+            },
+          },
+        }
+      }
+    </script>
+  </head>
+  <body class='bg-eggwhite'>
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo/Home link -->
+        <a href="./index.html">
+          <img src="./assets/betta_logo_root_white.png" alt="Aqua Guest Logo" style="width: 7rem; height: intrinsic;">
+        </a>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navbar links for mobile -->
+        <div id="mobile-menu" class="hidden grid grid-cols-1 lg:flex">
+          <div class="space-x-4 font-serif">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./prices.html">Prices</a>
+            <a href="./booking.html">Booking</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./contact.html" class="bg-white text-gray-800 py-2 px-4 rounded-full hover:bg-gray-100 focus:outline-none focus:shadow-outline">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class='container mx-auto mt-6 md:mt-5 px-5'>
+      <div class="container mx-auto mt-8 font-serif">
+          <h1 class="text-4xl font-bold mb-4">Pricing</h1>
+
+          <div class="bg-gray-100 p-6 rounded-md shadow-md">
+            <p class="text-lg font-semibold">Betta Fish Centerpiece Package</p>
+            <p class="text-gray-700">Create a stunning and humane atmosphere with our betta fish centerpieces.</p>
+
+            <!-- Pricing Details -->
+            <div class="mt-4">
+              <p class="text-gray-700">Price per Bowl: $30</p>
+              <p class="text-gray-700">Service Fee per Night: $300</p>
+              <p class="text-gray-700">Delivery Fee: Calculated based on location</p>
+            </div>
+
+            <!-- Total Pricing -->
+            <div class="mt-6">
+              <p class="text-lg font-semibold">Total Cost:</p>
+              <p class="text-xl text-blue-600 font-bold">$330 per bowl (plus delivery)</p>
+            </div>
+          </div>
+        </div>
+    </main>
+
+  <br><br>
+
+  <footer class="bg-gray-800 text-white px-4 py-4 font-serif">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Contact Info on the left -->
+      <div class="text-left text-sm">
+        <p>123 Main St, Cityville, State</p>
+        <p>contact@example.com</p>
+        <p>+1 (123) 456-7890</p>
+      </div>
+
+      <!-- Centered Copyright Text -->
+      <div class="text-center text-sm">
+        <p>© 2023, Aqua Guest</p>
+      </div>
+
+      <!-- Links to About and Social Media on the right -->
+      <div class="text-right text-sm grid grid-cols-1">
+        <a href="./about.html" class="text-gray-300 hover:text-white">About</a>
+        <a href="./index.html" class="text-gray-300 hover:text-white">Social Media</a>
+      </div>
+    </div>
+  </footer>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuToggle.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });
+</script>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aqua Guest | Humane, Live Fish Decor for Weddings, Parties and More</title>
+    <link rel="icon" type="image/x-icon" href="../app/assets/images/betta_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Georgia'],
+            },
+            colors: {
+              'eggwhite': '#f6f5f4',
+              'cream': '#f6f1ea',
+              'purple': '#6a19a8',
+            },
+          },
+        }
+      }
+    </script>
+  </head>
+  <body class='bg-eggwhite'>
+    <main class='container mx-auto mt-6 md:mt-5 px-5'>
+      <div class='flex justify-center items-center grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4'>
+        <div class='flex justify-center items-center md:grid md:grid-cols-1'>
+          <img src="../app/assets/images/logo_koi.png" alt="AG Logo" style="width: 15rem; height: intrinsic;">
+          <ul class='tracking-widest text-lg'>
+            <li><a href="./gallery.html">gallery</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./prices.html">prices</a></li>
+            <li><a href="./booking.html">booking</a></li>
+            <li><a href="./faq.html">faq</a></li>
+            <li><a href="./contact.html">contact</a></li>
+          </ul>
+        </div>
+        <div class='md:col-span-3 lg:col-span-3'>
+          <img src="../app/assets/images/wedding.jpg" alt="Wedding scene">
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <br><br>
+
+  <footer class="bg-gray-800 text-white px-4 py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Contact Info on the left -->
+      <div class="text-left text-sm">
+        <p>123 Main St, Cityville, State</p>
+        <p>contact@example.com</p>
+        <p>+1 (123) 456-7890</p>
+      </div>
+
+      <!-- Centered Copyright Text -->
+      <div class="text-center text-sm">
+        <p>© 2023, Aqua Guest</p>
+      </div>
+
+      <!-- Links to About and Social Media on the right -->
+      <div class="text-right text-sm grid grid-cols-1">
+        <a href="./about.html" class="text-gray-300 hover:text-white">About</a>
+        <a href="./index.html" class="text-gray-300 hover:text-white">Social Media</a>
+      </div>
+    </div>
+  </footer>
+
+</html>
